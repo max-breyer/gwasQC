@@ -5,7 +5,6 @@ if (length(args)!=1) {
   stop("Exactly one arguments must be supplied. Arg1 = Output file")
 }
 outfile<- args[1]
-outfile <- "HapMap_3_r3_1_dropSummary.txt"
 
 #bashcmd <- "grep \"Before .*pruning, there are\" *.log | cut -d: -f1" 
 bashcmd <- 'grep "people (" *.log | cut -d: -f1'
